@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-image: url(img/bg.jpg); background-attachment: fixed;background-position: center;">
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img " >
+		</div>
+		<div class="login-content" >
+			<form onsubmit="return validate(redirect);" >
+				<img src="img/avtaa.png" class="animate__animated animate__backInDown" style=" animation-duration: 2s;">
+				<h2 class="title animate__animated animate__backInRight animate__delay-2s	" style="font-family: cursive; animation-duration: 2s;"><p><span style='font-size: 60px; font-family: "Comic Sans MS", sans-serif;'><strong><span style="color: #32be8f; text-shadow: rgba(31, 28, 28, 0.76) 6px 6px 4px;">WELCOME</span></strong></span></p></h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user" style="color: rgb(72, 179, 54);"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" required id="usen">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock" style="color: rgb(72, 179, 54);"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" required id="passv">
+            	   </div>
+            	</div>
+            	<a href="#" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login" style="font-family: cursive;" >
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
