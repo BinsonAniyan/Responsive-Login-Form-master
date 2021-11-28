@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Main To Do</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 body {
   margin: 0;
   min-width: 250px;
-}/* Include the padding and border in an element's total width and height */
+}
+
 * {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
+
 ul {
   margin: 0;
   padding: 0;
@@ -27,10 +29,8 @@ ul li {
   padding: 12px 8px 12px 40px;
   list-style-type: none;
   background: rgba(71, 216, 209, 0.479);
-  /* color:#f44336; */
   font-size: 18px;
   transition: 0.2s;
-
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -38,12 +38,12 @@ ul li {
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+
 ul li:nth-child(odd) {
   background: #fffffff3;
 }
 
-/* Darker background-color on hover */
+
 ul li:hover {
   background: rgba(190, 190, 190, 0.746);
 }
@@ -91,7 +91,7 @@ ul li.checked::before {
   text-align: center;
 }
 
-/* Clear floats after the header */
+
 .header:after {
   content: "";
   display: table;
@@ -113,8 +113,8 @@ input {
 .addBtn {
   padding: 10px;
   width: 25%;
-  background: #d9d9d9;
-  color: #555;
+  background: #352e2e;
+  color: rgb(250, 250, 250);
   float: left;
   text-align: center;
   font-size: 16px;
@@ -124,7 +124,7 @@ input {
 }
 
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: rgba(20, 95, 42, 0.856);
 }
 /* home page */
 a.effect-shine:hover {
@@ -142,12 +142,10 @@ a.effect-shine:hover {
 	  -webkit-mask-position: -50%;
 	}
   }
-
-
-
-
 </style>
 </head>
+
+
 <body>
   <nav class="navbar navbar-inverse" style="border-radius: 0%;">
     <div class="container-fluid">
@@ -170,7 +168,8 @@ a.effect-shine:hover {
 <ul id="myUL">
  
 </ul>
-<script >// Create a "close" button and append it to each list item
+<script >
+  // Create a "close" button and append it to each list item
   var myNodelist = document.getElementsByTagName("LI");
   var i;
   for (i = 0; i < myNodelist.length; i++) {
