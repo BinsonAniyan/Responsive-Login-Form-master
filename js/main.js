@@ -1,6 +1,4 @@
 const inputs = document.querySelectorAll(".input");
-
-
 function addcl(){
 	let parent = this.parentNode.parentNode;
 	parent.classList.add("focus");
@@ -19,20 +17,31 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-function redirect(){
-	window.open("infff.html");
-}
-function validate(redirect){
+
+document.getElementById('form1').addEventListener('submit', function(evt){
+  evt.preventDefault();
+  
+  let ass=validate();
+  if(ass){window.location.href="infff.html";}
+  
+});
+
+
+
+
+
+function validate(){
+  // return true;
 	let name =document.getElementById("usen");
     let pass =document.getElementById("passv");
     if(name.value=='admin' && pass.value=='12345'){
         
-		redirect();
+		return true;
     }
     else{
         
           alert("Ïnvalid Login Credentials!");  
-          
+          return false;
         }
     
 }
