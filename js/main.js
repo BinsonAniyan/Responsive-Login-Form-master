@@ -1,3 +1,7 @@
+ history.pushState(null, null, null);
+  window.addEventListener('popstate', function () {
+      history.pushState(null, null, null);
+  });
 const inputs = document.querySelectorAll(".input");
 
 
@@ -73,8 +77,5 @@ let count=0;
     }
   }
 
-  history.pushState(null, null, null);
-  window.addEventListener('popstate', function () {
-      history.pushState(null, null, null);
-  });
+ 
 
