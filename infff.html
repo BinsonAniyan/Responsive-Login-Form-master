@@ -154,7 +154,7 @@ a.effect-shine:hover {
       </div>
       
         
-        <aa href="#" onclick="history.go(-1)" style="font-size: larger;text-decoration: none;padding-top: 10px; padding-right: 10px;color: rgb(246, 246, 246);" class="nav navbar-nav navbar-right effect-shine"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <a href="" onclick="goBack();" style="font-size: larger;text-decoration: none;padding-top: 10px; padding-right: 10px;color: rgb(246, 246, 246);" class="nav navbar-nav navbar-right effect-shine"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
       
     </div>
   </nav>
@@ -270,6 +270,9 @@ a.effect-shine:hover {
    
   }
   data();
+  function goBack() {
+  window.history.back()
+}
   </script>
 </body>
 </html>

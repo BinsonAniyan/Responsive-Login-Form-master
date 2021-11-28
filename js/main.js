@@ -19,7 +19,9 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-
+function redirect(){
+	window.open("infff.html");
+}
 function validate(redirect){
 	let name =document.getElementById("usen");
     let pass =document.getElementById("passv");
@@ -34,9 +36,7 @@ function validate(redirect){
         }
     
 }
-function redirect(){
-	window.open("infff.html");
-}
+
 let count=0;
   
   function edit(obj) {
