@@ -35,7 +35,7 @@ function validate(redirect){
     
 }
 function redirect(){
-	window.open('infff.html','_self');
+	window.open("infff.html");
 }
 let count=0;
   
