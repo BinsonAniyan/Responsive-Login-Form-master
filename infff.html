@@ -247,11 +247,41 @@ a.effect-shine:hover {
    
    
     for(let x in data){
-   
+      if(data[x].completed==true){
+        
+        var li = document.createElement("li");
+    var gg=data[x].title;
+    
+    var t = document.createTextNode(gg);
+    console.log();
+    li.appendChild(t);
+      li.style.textDecoration = 'line-through';
+      li.style.backgroundColor='#888';
+      li.style.color='white';
+      document.getElementById("myUL").appendChild(li);
+      
+      document.getElementById("myInput").value = "";
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }else{
     var li = document.createElement("li");
-    var t = document.createTextNode(data[x].title);
+    var gg=String(data[x].title);
+    
+    var t = document.createTextNode(gg);
+    console.log(t);
     li.appendChild(t);
       document.getElementById("myUL").appendChild(li);
+      
     document.getElementById("myInput").value = "";
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
@@ -265,10 +295,9 @@ a.effect-shine:hover {
         div.style.display = "none";
       }
     }
-  
-    }
-   
   }
+    }
+    }
   data();
   function cmts(){
     location.assign("index.html");
